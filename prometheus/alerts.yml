@@ -1,0 +1,29 @@
+groups:
+  - name: gdbook-site
+    rules:
+      - alert: SiteDown
+        expr: probe_success == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "GDBook site is not reachable"
+          description: "{{ $labels.instance }} has failed its HTTP check for more than 1 minute."
+
+      - alert: SiteSlow
+        expr: probe_duration_seconds > 1
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "GDBook site is answering slowly"
+          description: "{{ $labels.instance }} has taken more than 1 second to answer for 5 minutes."
+
+      - alert: ExporterDown
+        expr: up == 0
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "A metrics exporter is down"
+          description: "Prometheus cannot scrape {{ $labels.job }}."

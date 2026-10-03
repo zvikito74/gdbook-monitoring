@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GDBook – Georgian Digital Book</title>
+  <meta name="description" content="GDBook is a digital reading platform where users can read both Georgian and translated foreign literature in one place.">
+  <link rel="icon" href="images/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="nav" id="home">
+    <div class="container nav-inner">
+      <a class="brand" href="#home">
+        <img src="images/logo.png" alt="GDBook logo" width="44" height="44">
+        <span>GDBook</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+      <nav class="nav-links" id="nav-links">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#catalog">Catalog</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>WELCOME TO GDBOOK</h1>
+      <p class="hero-lead">Discover a world of literature at your fingertips. GDBook offers a diverse collection of Georgian and translated works, empowering readers to explore and enjoy stories from both local and international authors.</p>
+      <div class="hero-row">
+        <img class="hero-image" src="images/hero.jpg" alt="Hands holding an ornate book">
+        <div class="hero-signup">
+          <h2>Join us today and start reading.</h2>
+          <p>Unlimited access to thousands of titles awaits you.</p>
+          <form class="signup-form" data-thanks="Thank you! We will be in touch soon.">
+            <input type="text" name="name" placeholder="Name" aria-label="Name" required>
+            <input type="email" name="email" placeholder="Email" aria-label="Email" required>
+            <button type="submit">Start Reading Now</button>
+            <p class="form-message" hidden></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="collection" id="catalog">
+    <div class="container">
+      <h2>Explore Our Collection</h2>
+      <p class="section-sub">Dive into our curated selection of bestsellers and classics.</p>
+      <ul class="products" id="products"></ul>
+    </div>
+  </section>
+
+  <section class="features" id="about">
+    <div class="container">
+      <h2>Why GDBook Stands Out</h2>
+      <p class="section-sub">Experience the difference with GDBook.</p>
+
+      <article class="feature">
+        <img src="images/feature-access.jpg" alt="E-reader lying on a bed">
+        <div>
+          <h3>Convenient Digital Access</h3>
+          <p>With GDBook, you can access your favorite books anytime and anywhere. Our user-friendly platform ensures that all your reading needs are just a click away, making it easier than ever to enjoy literature.</p>
+          <a class="btn-light" href="#catalog">Learn More</a>
+        </div>
+      </article>
+
+      <article class="feature">
+        <img src="images/feature-authors.jpg" alt="Hand holding an e-reader at a desk">
+        <div>
+          <h3>Support Local Authors</h3>
+          <p>By choosing GDBook, you are directly supporting Georgian authors and their stories. We prioritize working with local talent to ensure that authentic voices are heard and celebrated.</p>
+          <a class="btn-light" href="#news">Meet Our Authors</a>
+        </div>
+      </article>
+
+      <article class="feature" id="pricing">
+        <img src="images/feature-pricing.jpg" alt="Tablet, notebook and glasses">
+        <div>
+          <h3>Affordable Reading Options</h3>
+          <p>We offer flexible pricing plans that cater to every reader's needs. Whether you prefer a monthly subscription or single-book purchases, GDBook ensures that quality literature is accessible to everyone.</p>
+          <a class="btn-light" href="#catalog">View Pricing</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="news" id="news">
+    <div class="container">
+      <h2>Stay Informed</h2>
+      <p class="section-sub">Get the latest updates from GDBook.</p>
+
+      <article class="post">
+        <img src="images/news-audiobooks.jpg" alt="E-reader on a desk next to an iced coffee">
+        <div>
+          <h3>Introducing Audiobooks!</h3>
+          <time datetime="2025-12-03">December 3, 2025</time>
+          <p>GDBook is expanding its offerings with a new selection of audiobooks. Perfect for those who want to listen while travelling, studying, or learning a new language.</p>
+        </div>
+      </article>
+
+      <article class="post">
+        <img src="images/news-publishers.jpg" alt="Woman reading in front of a bookshop">
+        <div>
+          <h3>Partnerships with Local Publishers</h3>
+          <time datetime="2025-12-03">December 3, 2025</time>
+          <p>We're proud to announce our new partnerships with various Georgian publishers to bring you the best of local literature.</p>
+        </div>
+      </article>
+
+      <article class="post">
+        <img src="images/news-releases.jpg" alt="E-reader lying on a pile of books">
+        <div>
+          <h3>New Releases: Exciting Titles Ahead</h3>
+          <time datetime="2025-12-03">December 3, 2025</time>
+          <p>We're thrilled to announce the upcoming release of several new titles, including works from both Georgian and international authors.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="join" id="contact">
+    <div class="container">
+      <h2>Join the GDBook Family</h2>
+      <p>Stay connected and receive the latest news, special offers, and updates directly to your inbox.</p>
+      <form class="signup-form inline" data-thanks="Thanks for joining the GDBook family!">
+        <input type="text" name="name" placeholder="Name" aria-label="Name" required>
+        <input type="email" name="email" placeholder="Email" aria-label="Email" required>
+        <button type="submit">Submit</button>
+        <p class="form-message" hidden></p>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">&copy; 2025 GDBook &middot; Georgian Digital Book</div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
